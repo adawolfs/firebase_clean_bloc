@@ -1,16 +1,30 @@
-# firebase_clean_bloc
+# Firebase Clean Bloc
 
-A new Flutter project.
+This is a template project for Clean Architecture, Bloc, Firebase, Testing and Cross-platform on Flutter.
 
-## Getting Started
+## About
 
-This project is a starting point for a Flutter application.
+### User
+Each entity is designed to have loose coupling on every component to maximize simplicity.
+```
+./lib/user                                      
+├── bloc                                        
+│   └── user.dart
+├── model
+│   └── user.dart
+└── ui
+    ├── screens
+    │   └── user_list.dart
+    └── widgets
+        ├── add_user.dart
+        └── list_user.dart   
+```
+### Tests
 
-A few resources to get you started if this is your first Flutter project:
+Review `test` directory
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+./test
+├── user_tests.dart
+└── widget_test.dart
+```
