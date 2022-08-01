@@ -7,17 +7,21 @@ This is a template project for Clean Architecture, Bloc, Firebase, Testing and C
 ### User
 Each entity is designed to have loose coupling on every component to maximize simplicity.
 ```
-./lib/user                                      
-├── bloc                                        
+./lib/user
+├── bloc
 │   └── user.dart
 ├── model
+│   └── user.dart
+├── repository
+│   ├── firestore
+│   │   └── user.dart
 │   └── user.dart
 └── ui
     ├── screens
     │   └── user_list.dart
     └── widgets
         ├── add_user.dart
-        └── list_user.dart   
+        └── list_user.dart
 ```
 ### Tests
 
