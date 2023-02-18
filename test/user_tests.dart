@@ -26,6 +26,7 @@ void userWidgets() {
         home: Scaffold(
           body: UserListView(
             width: 50,
+            height: 50,
             users: users,
           ),
         ),
